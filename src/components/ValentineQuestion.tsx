@@ -135,17 +135,17 @@ export function ValentineQuestion() {
           to={{ opacity: 1, y: 0 }}
         />
 
-        <p className="mx-auto mt-6 max-w-2xl text-2xl leading-relaxed sm:text-3xl">
+        <p className="mx-auto mt-6 text-2xl leading-relaxed sm:text-3xl mb-3 max-w-sm">
           This is just a small reminder of how much you mean to me.
-          Then remove the moment of truth card.</p>
+        </p>
 
         <img src="/assets/love-heart.svg" alt="moment-of-truth" className="w-24 h-24 object-contain absolute top-4 left-0" />
         <img src="/assets/rose-flower.svg" alt="moment-of-truth" className="w-24 h-24 object-contain absolute -bottom-4 right-0" />
 
-        <div className="flex flex-row gap-1 items-center justify-center">
-          <img src="/end-1.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl -rotate-12" />
-          <img src="/end-2.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl" />
-          <img src="/end-3.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl rotate-12" />
+        <div className="flex flex-row gap-0 items-center justify-center">
+          <img src="/end-1.jpeg" alt="moment-of-truth" className="w-48 h-48 aspect-square object-cover border-8 border-white rounded-3xl shadow-xl -rotate-12" />
+          <img src="/end-2.jpeg" alt="moment-of-truth" className="w-48 h-48 aspect-square object-cover border-8 border-white rounded-3xl shadow-xl" />
+          <img src="/end-3.jpeg" alt="moment-of-truth" className="w-48 h-48 aspect-square object-cover border-8 border-white rounded-3xl shadow-xl rotate-12" />
         </div>
 
         {/* <div className="mt-10 flex justify-center">

@@ -8,7 +8,7 @@ export function IntroductionSection() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
       <FloatingHearts />
       <RevealOnScroll effect="fadeIn" className="mx-auto w-full max-w-3xl text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Our beginning</p>
+        {/* <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Our beginning</p> */}
         <h1 className="font-heading mt-4 max-sm:text-3xl text-4xl font-extrabold text-[#ffc041] sm:text-6xl">{heroIntro.heading}</h1>
         <BlurText
           text={heroIntro.subheading}
