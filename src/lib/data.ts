@@ -5,16 +5,16 @@ export type StoryPage = {
 };
 
 export const heroIntro = {
-	heading: 'Two souls, one beautiful journey',
+	heading: 'Project Us',
 	subheading:
-		"There's nothing better than getting lost in a magical world between pages or dancing around the living room to our favorite songs. I bring the magic and stories, he brings the logic and adventure - Together, we're the perfect balance. We're two different souls who found each other and decided to write our story together.",
+		'There’s nothing better than getting lost together watching our favorite shows, or singing during our car rides. We are two different but the same souls that found each other unexpectedly and decided to go on a ride together.',
 };
 
 export const storyPages: StoryPage[] = [
 	{
-		title: 'The Day Everything Changed',
+		title: 'Where It All Begun',
 		description:
-			'We met playing Connect Four. He says it was my smile and laugh that drew him in from across the room. For me, it was his quiet demeanor — calm, steady, and intriguing. We started talking, and hours flew by like minutes. Who knew a simple game could lead to the most important connection of our lives?',
+			'It’s ironic that our first date was at a football match. I never imagined I will go to a stadium to watch Hearts of Oak and Kotoko, but I guess it’s always the unexpected things that leave the greatest impact. I will always remember how you never let go of my hands, I should have known there and then that you will never let me go.',
 		image: '/storybook-page-1.jpeg',
 	},
 	{
@@ -45,10 +45,12 @@ export const herHighlights = [
 ];
 
 export const hisHighlights = [
-	'He loves with intention and protects with patience.',
-	'His warmth makes difficult days feel lighter.',
-	'He listens deeply and speaks with honesty.',
-	'His presence feels like peace, even in chaos.',
+	'You’re always there',
+	'You have a way of bringing everyone together',
+	'Your Kind heart',
+	'No one does strategy and logic like you',
+	'You bring the best out of everyone around you',
+	'You’re support personified.',
 ];
 
 export const roadmapMilestones = [
@@ -56,25 +58,25 @@ export const roadmapMilestones = [
 		year: '2026',
 		title: 'Always There for Me',
 		description:
-			"No matter what's happening, he's my constant. Through good days and bad, he's the steady presence I can always count on. He never lets me face anything alone.",
+			'I’m a yapper, so it takes a very special someone to be able to sit through my long and winding monologues about things that don’t even exist I’m an overthinker, but you always anchor me back to reality and never leave even when I’m spinning conspiracy theories out of nowhere. You’re my constant!',
 	},
 	{
 		year: '2027',
 		title: 'Makes Me Laugh',
 		description:
-			'His sense of humor is my favorite thing. He knows exactly how to make me laugh, even on my hardest days. Our inside jokes are my treasure.',
+			'My heart is always full anytime I’m with you because I know I will definitely laugh myself out of my seat. Thank you for allowing me laugh with you and at you, God knows it warms my heart',
 	},
 	{
 		year: '2028',
 		title: 'Pushes Me to Be My Best',
 		description:
-			"He believes in me even when I don't believe in myself. He pushes me to be my absolute best, not because he wants me to change, but because he sees my potential and won't let me settle for less.",
+			'You make me feel like I could land on the moon sometimes. You push me to be my best self in all aspects, I’ve done things I couldn’t imagine myself doing and I’m better for it all because I have you in my life.',
 	},
 	{
 		year: 'Forever',
 		title: 'Forever Baby',
 		description:
-			"Forever Baby He's my forever baby. We're stuck with each other forever, and I wouldn't have it any other way. We'll scale all obstacles together, hand in hand.",
+			'My promise to you is this: I will hold your hands forever and I will stay besides you till eternity. Because you and I are endgame.',
 	},
 ];
 

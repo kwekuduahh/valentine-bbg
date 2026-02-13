@@ -1,35 +1,35 @@
-import { useCallback, useMemo, useRef, useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
-import ClickSpark from "@/components/ClickSpark"
+import { useMemo, useRef } from "react"
+import { motion } from "framer-motion"
+// import ClickSpark from "@/components/ClickSpark"
 import SplitText from "@/components/SplitText"
-import StarBorder from "@/components/StarBorder"
+// import StarBorder from "@/components/StarBorder"
 
-type ButtonPosition = {
-  x: number
-  y: number
-  scale: number
-}
+// type ButtonPosition = {
+//   x: number
+//   y: number
+//   scale: number
+// }
 
-const NO_TEXTS = [
-  "No",
-  "Are you sure?",
-  "Really really?",
-  "Think again!",
-  "Pretty please?",
-  "I'll wait...",
-  "Last chance!",
-]
+// const NO_TEXTS = [
+//   "No",
+//   "Are you sure?",
+//   "Really really?",
+//   "Think again!",
+//   "Pretty please?",
+//   "I'll wait...",
+//   "Last chance!",
+// ]
 
-const CONFETTI_COLORS = [
-  "#04201e",
-  "#fdf9f764",
-  "#fdf9f9",
-  "#0ab01e99",
-  "#fdf9f7",
-  "#2d2a",
-  "#fdf9f7",
-  "#04201e",
-]
+// const CONFETTI_COLORS = [
+//   "#04201e",
+//   "#fdf9f764",
+//   "#fdf9f9",
+//   "#0ab01e99",
+//   "#fdf9f7",
+//   "#2d2a",
+//   "#fdf9f7",
+//   "#04201e",
+// ]
 
 const seededRandom = (seed: number) => {
   const x = Math.sin(seed * 9999.91) * 10000
@@ -37,26 +37,26 @@ const seededRandom = (seed: number) => {
 }
 
 export function ValentineQuestion() {
-  const [accepted, setAccepted] = useState(false)
-  const [noState, setNoState] = useState<ButtonPosition>({ x: 0, y: 0, scale: 1 })
-  const [noClicks, setNoClicks] = useState(0)
+  // const [accepted, setAccepted] = useState(false)
+  // const [noState, setNoState] = useState<ButtonPosition>({ x: 0, y: 0, scale: 1 })
+  // const [noClicks, setNoClicks] = useState(0)
   const sectionRef = useRef<HTMLElement>(null)
 
-  const confettiPieces = useMemo(
-    () =>
-      Array.from({ length: 60 }, (_, i) => ({
-        id: i,
-        left: seededRandom(i + 1) * 100,
-        delay: seededRandom(i + 101) * 1.6,
-        duration: 2 + seededRandom(i + 201) * 2.5,
-        size: 6 + seededRandom(i + 301) * 10,
-        color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-        rotation: seededRandom(i + 401) * 360,
-        drift: (seededRandom(i + 501) - 0.5) * 80,
-        shape: i % 3, // 0 = heart, 1 = circle, 2 = rectangle
-      })),
-    [],
-  )
+  // const confettiPieces = useMemo(
+  //   () =>
+  //     Array.from({ length: 60 }, (_, i) => ({
+  //       id: i,
+  //       left: seededRandom(i + 1) * 100,
+  //       delay: seededRandom(i + 101) * 1.6,
+  //       duration: 2 + seededRandom(i + 201) * 2.5,
+  //       size: 6 + seededRandom(i + 301) * 10,
+  //       color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+  //       rotation: seededRandom(i + 401) * 360,
+  //       drift: (seededRandom(i + 501) - 0.5) * 80,
+  //       shape: i % 3, // 0 = heart, 1 = circle, 2 = rectangle
+  //     })),
+  //   [],
+  // )
 
   const floatingHearts = useMemo(
     () =>
@@ -71,27 +71,27 @@ export function ValentineQuestion() {
     [],
   )
 
-  const moveNoButton = useCallback(() => {
-    const container = sectionRef.current
-    if (!container) return
+  // const moveNoButton = useCallback(() => {
+  //   const container = sectionRef.current
+  //   if (!container) return
 
-    const rect = container.getBoundingClientRect()
-    const maxX = rect.width / 2 - 60
-    const maxY = rect.height / 2 - 40
+  //   const rect = container.getBoundingClientRect()
+  //   const maxX = rect.width / 2 - 60
+  //   const maxY = rect.height / 2 - 40
 
-    const offsetX = (Math.random() - 0.5) * maxX * 1.5
-    const offsetY = (Math.random() - 0.5) * maxY * 0.8
+  //   const offsetX = (Math.random() - 0.5) * maxX * 1.5
+  //   const offsetY = (Math.random() - 0.5) * maxY * 0.8
 
-    setNoClicks((current) => current + 1)
-    setNoState({
-      x: offsetX,
-      y: offsetY,
-      scale: Math.max(0.15, 1 - (noClicks + 1) * 0.12),
-    })
-  }, [noClicks])
+  //   setNoClicks((current) => current + 1)
+  //   setNoState({
+  //     x: offsetX,
+  //     y: offsetY,
+  //     scale: Math.max(0.15, 1 - (noClicks + 1) * 0.12),
+  //   })
+  // }, [noClicks])
 
-  const noText = NO_TEXTS[Math.min(noClicks, NO_TEXTS.length - 1)]
-  const noVisible = noClicks < NO_TEXTS.length
+  // const noText = NO_TEXTS[Math.min(noClicks, NO_TEXTS.length - 1)]
+  // const noVisible = noClicks < NO_TEXTS.length
 
   return (
     <section
@@ -123,11 +123,11 @@ export function ValentineQuestion() {
         ))}
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
+      <div className="z-10 mx-auto w-full max-w-4xl text-center relative">
         <SplitText
           tag="h2"
-          text="Will You Be My Valentine?"
-          className="font-heading text-4xl font-bold sm:text-6xl lg:text-7xl"
+          text="Happy Valentine's Day, My Love"
+          className="font-heading text-4xl font-bold sm:text-6xl lg:text-7xl text-[#ffc041]"
           splitType="chars"
           delay={28}
           duration={1}
@@ -136,10 +136,19 @@ export function ValentineQuestion() {
         />
 
         <p className="mx-auto mt-6 max-w-2xl text-2xl leading-relaxed sm:text-3xl">
-          Every chapter leads here. Say yes and let the best pages begin.
-        </p>
+          This is just a small reminder of how much you mean to me.
+          Then remove the moment of truth card.</p>
 
-        <div className="mt-10 flex justify-center">
+        <img src="/assets/love-heart.svg" alt="moment-of-truth" className="w-24 h-24 object-contain absolute top-4 left-0" />
+        <img src="/assets/rose-flower.svg" alt="moment-of-truth" className="w-24 h-24 object-contain absolute -bottom-4 right-0" />
+
+        <div className="flex flex-row gap-1 items-center justify-center">
+          <img src="/end-1.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl -rotate-12" />
+          <img src="/end-2.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl" />
+          <img src="/end-3.jpeg" alt="moment-of-truth" className="w-48 h-48 object-contain border-8 border-white rounded-3xl shadow-xl rotate-12" />
+        </div>
+
+        {/* <div className="mt-10 flex justify-center">
           <StarBorder
             as="div"
             color="#fdf9f764"
@@ -188,13 +197,13 @@ export function ValentineQuestion() {
               )}
             </div>
           </StarBorder>
-        </div>
+        </div> */}
       </div>
 
       {/* Celebration overlay */}
-      <AnimatePresence>
-        {accepted && (
-          <motion.div
+      {/* <AnimatePresence> */}
+      {/* {accepted && ( */}
+      {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -218,8 +227,8 @@ export function ValentineQuestion() {
             </motion.div>
 
             {/* Confetti falling */}
-            <div className="pointer-events-none absolute inset-0 overflow-hidden">
-              {confettiPieces.map((piece) => (
+      {/* <div className="pointer-events-none absolute inset-0 overflow-hidden"> */}
+      {/* {confettiPieces.map((piece) => (
                 <motion.span
                   key={`confetti-${piece.id}`}
                   className="absolute"
@@ -250,21 +259,21 @@ export function ValentineQuestion() {
                   {piece.shape === 0 && "\u2764"}
                   {piece.shape === 1 && <span className="block h-2 w-2 rounded-full" style={{ backgroundColor: piece.color }} />}
                 </motion.span>
-              ))}
-            </div>
+              ))} */}
+      {/* </div> */}
 
-            {/* Large pulsing hearts at the center background */}
-            <motion.div
+      {/* Large pulsing hearts at the center background */}
+      {/* <motion.div
               className="pointer-events-none absolute text-[#fdf9f7]/20"
               animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.3, 0.15] }}
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               style={{ fontSize: "280px" }}
             >
               &#10084;
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </motion.div> */}
+      {/* </motion.div> */}
+      {/* )} */}
+      {/* </AnimatePresence> */}
     </section>
   )
 }

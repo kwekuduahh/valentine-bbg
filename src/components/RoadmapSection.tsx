@@ -6,12 +6,12 @@ const placesToVisit = [
   {
     number: "01",
     title: "World Explorers",
-    description: "From hidden beaches to mountain peaks, we'll travel the world together, collecting stamps in our passports and memories in our hearts.",
+    description: "From the dramatic natural landscape of Norway to the clean streets of Japan, we’ll travel the world together, collecting memories and experiences in our hearts",
   },
   {
     number: "02",
     title: "Our Cabin",
-    description: "A little cabin near a stream, where we can grow old together. Mornings with coffee on the porch, evenings with books by the fire, and a lifetime of love in between.",
+    description: "A little cabin near the stream, where we can grow old together. Because I want to grow old with you, reading books by the fire and reminiscing of a great life together",
   },
   {
     number: "03",
