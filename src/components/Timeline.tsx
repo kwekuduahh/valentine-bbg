@@ -39,8 +39,10 @@ export function Timeline({ milestones }: TimelineProps) {
 
           <TimelineContent className="rounded-2xl border border-[#fdf9f764] bg-[#062d2a] p-4 sm:p-6 relative">
             {index === 0 && <img src="/star.svg" alt="glasses-bg" className="absolute -bottom-8 left-0 w-16 h-16 object-contain" />}
+            {index === 0 && <img src="/assets/love-words.svg" alt="glasses-bg" className="absolute -top-5 right-0 w-30 h-30 object-contain -rotate-12" />}
             {index === 1 && <img src="/spec.svg" alt="glasses-bg" className="absolute top-0 -left-5 w-24 h-24 object-contain -rotate-12" />}
             {index === 2 && <img src="/gun-go-green.svg" alt="gun-bg" className="absolute -bottom-16 right-0 w-24 h-24 object-contain z-40 rotate-12" />}
+            {index === 3 && <img src="/assets/love-heart.svg" alt="rose-flower-bg" className="absolute -bottom-7 right-0 w-30 h-30 object-contain -rotate-12" />}
             <TimelineHeader>
               <img src={`/timeline-${index + 1}.jpeg`} alt={item.title} className="w-full h-100 object-cover rounded-2xl" />
               {/* <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#fdf9f7]">

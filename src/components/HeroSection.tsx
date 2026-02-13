@@ -1,7 +1,5 @@
-import BlurText from "@/components/BlurText"
-import { heroIntro } from "@/lib/data"
+// import BlurText from "@/components/BlurText"
 import { FloatingHearts } from "@/components/FloatingHearts"
-import { RevealOnScroll } from "../../components/gsap/reveal-on-scroll"
 
 export function HeroSection() {
   return (
@@ -16,16 +14,16 @@ export function HeroSection() {
         }}
       />
       <FloatingHearts />
-      <RevealOnScroll effect="fadeIn" className="mx-auto w-full max-w-3xl text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Our beginning</p>
-        <h1 className="font-heading mt-4 max-sm:text-5xl text-7xl font-bold text-[#ffc041] sm:text-6xl">{heroIntro.heading}</h1>
-        <BlurText
-          text={heroIntro.subheading}
-          className="mx-auto mt-8 max-w-2xl text-3xl text-[#fdf9f7] sm:text-4xl"
+      <div className="mt-auto mx-auto w-full max-w-3xl text-center">
+        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Project Us</p>
+        <h1 className="font-heading mt-4 max-sm:text-xl text-3xl font-extrabold text-[#ffc041] sm:text-6xl">Happy Valentine's Day <span className="text-[#ffc041]">💖</span></h1>
+        {/* <BlurText
+          text="I love you more than words can say"
+          className="mx-auto mt-8 max-w-2xl text-xl text-[#fdf9f7] sm:text-xl"
           animateBy="words"
-          direction="bottom"
-        />
-      </RevealOnScroll>
+          direction="top"
+        /> */}
+      </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#fdf9f7]">
         <div className="animate-bounce text-xs tracking-[0.3em] uppercase">Scroll</div>

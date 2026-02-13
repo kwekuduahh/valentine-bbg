@@ -8,7 +8,7 @@ type HighlightCardsProps = {
 
 export function HighlightCards({ items, cardClassName }: HighlightCardsProps) {
   return (
-    <div className="space-y-4">
+    <div>
       {items.map((item) => (
         <GlareHover
           key={item}
@@ -22,9 +22,9 @@ export function HighlightCards({ items, cardClassName }: HighlightCardsProps) {
           className={`flex! w-full! cursor-default! items-start! justify-start! border! ${cardClassName}`}
           style={{ minHeight: "unset" }}
         >
-          <article className="w-full px-4 py-5 sm:px-5">
+          <article className="w-full px-4 py-1 sm:px-5">
             {/* <p className={`font-heading text-xs uppercase tracking-[0.28em] ${accentColorClass}`}>Highlight {index + 1}</p> */}
-            <p className="mt-2 text-3xl leading-relaxed text-[#fdf9f7] sm:text-4xl">{item}</p>
+            <p className="mt-0 text-xl leading-relaxed text-[#fdf9f7] ">{item}</p>
           </article>
         </GlareHover>
       ))}

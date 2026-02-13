@@ -3,13 +3,14 @@ import { HeroSection } from "@/components/HeroSection"
 import Noise from "@/components/Noise"
 import { Preloader } from "@/components/Preloader"
 import { StorybookSection } from "@/components/StorybookSection"
-import { HerSection } from "@/components/HerSection"
+// import { HerSection } from "@/components/HerSection"
 import { HisSection } from "@/components/HisSection"
 import { RoadmapSection } from "@/components/RoadmapSection"
 import { SpotifySection } from "@/components/SpotifySection"
 import { ValentineQuestion } from "@/components/ValentineQuestion"
 import { useGsapScrollTrigger } from "@/hooks/useGsapScrollTrigger"
 import "./App.css"
+import { IntroductionSection } from "@/components/Introduction"
 
 function App() {
   const [loadingDone, setLoadingDone] = useState(false)
@@ -33,14 +34,17 @@ function App() {
           <HeroSection />
           {/* Hero includes HeroGridBackground (8×8 / 4×4 grid, ~2/3 cells with image from /hero-grid-title.jpg) */}
         </div>
+        <div data-story-section>
+          <IntroductionSection />
+        </div>
 
         <div data-story-section>
           <StorybookSection />
         </div>
 
-        <div data-story-section>
+        {/* <div data-story-section>
           <HerSection />
-        </div>
+        </div> */}
 
         <div data-story-section>
           <HisSection />

@@ -15,12 +15,12 @@ export function HisSection() {
           </BouncingText>
         </div> */}
 
-        <div className="mb-4 flex items-center gap-3 text-[#fdf9f7]">
-          <HeartIcon size={30} />
-          <p className="font-heading text-2xl uppercase tracking-[0.3em]">Why He is special</p>
-        </div>
         <div className="grid items-center gap-8 grid-cols-1 md:grid-cols-2">
           <div className="order-2 md:order-1">
+            <div className="mb-4 flex items-center gap-3 text-[#fdf9f7]">
+              <HeartIcon size={30} />
+              <p className="font-heading text-2xl uppercase tracking-[0.3em]">Why He is special</p>
+            </div>
             <StaggerOnScroll effect="scale">
               <HighlightCards
                 items={hisHighlights}
@@ -31,9 +31,11 @@ export function HisSection() {
           </div>
 
           <div className="order-1 md:order-2">
-            <div className="h-[500px] w-full">
+            <div className="h-[500px] w-full relative">
               {/* <Lanyard className="h-[1020px] w-full" cardImageSrc={profileImages.him} /> */}
-              <img src="/his-profile.jpeg" alt="his-profile" className="w-full h-full object-cover rounded-3xl" />
+              <img src="/his-profile.jpeg" alt="his-profile" className="w-full h-full object-cover rounded-3xl border-8 border-white shadow-xl" />
+              <img src="/gun-go-green.svg" alt="love-heart" className="absolute -bottom-10 right-0 w-32 h-32 object-contain z-40 -rotate-12" />
+              <img src="/star.svg" alt="love-heart" className="absolute -top-12 -left-12 w-24 h-24 object-contain z-40" />
             </div>
           </div>
         </div>

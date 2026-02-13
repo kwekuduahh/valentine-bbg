@@ -16,7 +16,7 @@ export function HerSection() {
         <div className="grid items-center gap-8 grid-cols-1 md:grid-cols-2">
           <div className="h-[500px] w-full">
             {/* <Lanyard className="h-[1020px] w-full" cardImageSrc={profileImages.her} /> */}
-            <img src="/her-profile.jpeg" alt="her-profile" className="w-full h-full object-cover rounded-3xl" />
+            <img src="/her-profile.jpeg" alt="her-profile" className="w-full h-full object-cover rounded-3xl border-8 border-white shadow-xl" />
           </div>
 
           <div>
@@ -29,7 +29,7 @@ export function HerSection() {
               <HighlightCards
                 items={herHighlights}
                 accentColorClass="text-[#fdf9f7]"
-                cardClassName="bg-gradient-to-r from-[#04201e] via-[#062d2a] to-[#021211] border-[#fdf9f764] py-1"
+                cardClassName="bg-gradient-to-r from-[#04201e] via-[#062d2a] to-[#021211] border-[#fdf9f764]"
               />
             </StaggerOnScroll>
           </div>

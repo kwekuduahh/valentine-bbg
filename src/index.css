@@ -152,7 +152,8 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "Caveat", cursive;
+    font-family: "Pompiere", cursive;
+    font-weight: 400;
   }
   h1,
   h2,
@@ -161,7 +162,7 @@ body {
   h5,
   h6,
   .font-heading {
-    font-family: "Agbalumo", "Inter", sans-serif;
+    font-family: "Elsie", "Inter", sans-serif;
     letter-spacing: -0.02em;
   }
 }
