@@ -9,10 +9,10 @@ export function IntroductionSection() {
       <FloatingHearts />
       <RevealOnScroll effect="fadeIn" className="mx-auto w-full max-w-3xl text-center">
         <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Our beginning</p>
-        <h1 className="font-heading mt-4 max-sm:text-xl text-3xl font-extrabold text-[#ffc041] sm:text-6xl">{heroIntro.heading}</h1>
+        <h1 className="font-heading mt-4 max-sm:text-3xl text-4xl font-extrabold text-[#ffc041] sm:text-6xl">{heroIntro.heading}</h1>
         <BlurText
           text={heroIntro.subheading}
-          className="mx-auto mt-8 max-w-2xl text-xl text-[#fdf9f7] sm:text-xl"
+          className="mx-auto mt-8 max-w-2xl text-2xl text-[#fdf9f7] sm:text-2xl"
           animateBy="words"
           direction="bottom"
         />
