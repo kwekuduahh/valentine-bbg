@@ -36,17 +36,17 @@ export function FlipBook({ pages, currentPage, onPageChange }: FlipBookProps) {
     <div className="w-full">
       <div className="mb-5 flex items-center justify-between">
         <button
-          className="rounded-full border border-[#eab8b2] px-4 py-2 text-sm text-[#9b1b30] disabled:opacity-40"
+          className="rounded-full border border-[#fdf9f764] px-4 py-2 text-sm text-[#fdf9f7] disabled:opacity-40"
           onClick={goPrev}
           disabled={!canGoPrev}
         >
           Previous
         </button>
-        <p className="font-heading text-sm tracking-[0.2em] text-[#9b1b30]">
+        <p className="font-heading text-sm tracking-[0.2em] text-[#fdf9f7]">
           Page {currentPage + 1} / {pages.length}
         </p>
         <button
-          className="rounded-full border border-[#eab8b2] px-4 py-2 text-sm text-[#9b1b30] disabled:opacity-40"
+          className="rounded-full border border-[#fdf9f764] px-4 py-2 text-sm text-[#fdf9f7] disabled:opacity-40"
           onClick={goNext}
           disabled={!canGoNext}
         >
@@ -55,7 +55,7 @@ export function FlipBook({ pages, currentPage, onPageChange }: FlipBookProps) {
       </div>
 
       <div
-        className="flipbook-wrap mx-auto h-[440px] w-full max-w-3xl select-none sm:h-[420px]"
+        className="flipbook-wrap mx-auto max-sm:h-[320px] h-[440px] w-full max-w-3xl select-none sm:h-[440px]"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >

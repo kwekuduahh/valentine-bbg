@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0.8557130098342896 0.265625 59.511688232421875 58.36727523803711" fill="none" preserveAspectRatio="xMidYMid meet" role="img">
+<g clip-path="url(#ae220ab4-f9a4-409e-b490-58835ab8e450)">
+<path d="M30.6116 58.6329C47.0453 58.6329 60.3674 45.5669 60.3674 29.4493C60.3674 13.3316 47.0453 0.265625 30.6116 0.265625C14.1779 0.265625 0.855713 13.3316 0.855713 29.4493C0.855713 45.5669 14.1779 58.6329 30.6116 58.6329Z" fill="url(#7e3495ea-94eb-4c02-9091-20fd5198277e)"></path>
+<path d="M30.6116 12.8848V46.2469" stroke="#FC5F4F" stroke-width="2.86114" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M13.6035 29.5664H47.6198" stroke="#FC5F4F" stroke-width="2.86114" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M42.6383 17.7715L18.5852 41.362" stroke="#FC5F4F" stroke-width="2.86114" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M18.5852 17.7715L42.6383 41.362" stroke="#FC5F4F" stroke-width="2.86114" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+<defs>
+<linearGradient id="7e3495ea-94eb-4c02-9091-20fd5198277e" x1="3.99128" y1="29.8096" x2="55.7601" y2="29.8096" gradientUnits="userSpaceOnUse">
+<stop offset="0.0260417" stop-color="#FFC7C8"></stop>
+<stop offset="0.265625" stop-color="#FFC9BE"></stop>
+<stop offset="1" stop-color="#FFD19E"></stop>
+</linearGradient>
+<clipPath id="ae220ab4-f9a4-409e-b490-58835ab8e450">
+<rect width="59.5117" height="58.3673" fill="white" transform="translate(0.855713 0.265625)"></rect>
+</clipPath>
+</defs>
+</svg>

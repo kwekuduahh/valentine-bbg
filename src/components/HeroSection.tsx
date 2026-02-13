@@ -17,17 +17,17 @@ export function HeroSection() {
       />
       <FloatingHearts />
       <RevealOnScroll effect="fadeIn" className="mx-auto w-full max-w-3xl text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#9b1b30]">Our beginning</p>
-        <h1 className="font-heading mt-4 text-4xl font-bold text-[#dc143c] sm:text-6xl">{heroIntro.heading}</h1>
+        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#062d2a]">Our beginning</p>
+        <h1 className="font-heading mt-4 text-4xl font-bold text-[#062d2a] sm:text-6xl">{heroIntro.heading}</h1>
         <BlurText
           text={heroIntro.subheading}
-          className="mx-auto mt-8 max-w-2xl text-3xl text-white sm:text-4xl"
+          className="mx-auto mt-8 max-w-2xl text-3xl text-[#fdf9f7] sm:text-4xl"
           animateBy="words"
           direction="bottom"
         />
       </RevealOnScroll>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#9b1b30]">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#fdf9f7]">
         <div className="animate-bounce text-xs tracking-[0.3em] uppercase">Scroll</div>
       </div>
     </section>

@@ -21,15 +21,20 @@ const NO_TEXTS = [
 ]
 
 const CONFETTI_COLORS = [
-  "#dc143c",
-  "#f7c5cc",
-  "#ff6b8a",
-  "#f4a6b1",
-  "#ffd7cc",
-  "#9b1b30",
-  "#fff8f0",
-  "#ff9ab0",
+  "#04201e",
+  "#fdf9f764",
+  "#fdf9f9",
+  "#0ab01e99",
+  "#fdf9f7",
+  "#2d2a",
+  "#fdf9f7",
+  "#04201e",
 ]
+
+const seededRandom = (seed: number) => {
+  const x = Math.sin(seed * 9999.91) * 10000
+  return x - Math.floor(x)
+}
 
 export function ValentineQuestion() {
   const [accepted, setAccepted] = useState(false)
@@ -41,13 +46,13 @@ export function ValentineQuestion() {
     () =>
       Array.from({ length: 60 }, (_, i) => ({
         id: i,
-        left: Math.random() * 100,
-        delay: Math.random() * 1.6,
-        duration: 2 + Math.random() * 2.5,
-        size: 6 + Math.random() * 10,
+        left: seededRandom(i + 1) * 100,
+        delay: seededRandom(i + 101) * 1.6,
+        duration: 2 + seededRandom(i + 201) * 2.5,
+        size: 6 + seededRandom(i + 301) * 10,
         color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-        rotation: Math.random() * 360,
-        drift: (Math.random() - 0.5) * 80,
+        rotation: seededRandom(i + 401) * 360,
+        drift: (seededRandom(i + 501) - 0.5) * 80,
         shape: i % 3, // 0 = heart, 1 = circle, 2 = rectangle
       })),
     [],
@@ -57,11 +62,11 @@ export function ValentineQuestion() {
     () =>
       Array.from({ length: 18 }, (_, i) => ({
         id: i,
-        left: Math.random() * 100,
-        delay: Math.random() * 4,
-        duration: 5 + Math.random() * 5,
-        size: 10 + Math.random() * 16,
-        opacity: 0.08 + Math.random() * 0.15,
+        left: seededRandom(i + 601) * 100,
+        delay: seededRandom(i + 701) * 4,
+        duration: 5 + seededRandom(i + 801) * 5,
+        size: 10 + seededRandom(i + 901) * 16,
+        opacity: 0.08 + seededRandom(i + 1001) * 0.15,
       })),
     [],
   )
@@ -91,14 +96,14 @@ export function ValentineQuestion() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#9b1b30] px-4 py-24 text-[#fff8f0] sm:px-6 sm:py-32"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#062d2a] px-4 py-24 text-[#fdf9f7] sm:px-6 sm:py-32"
     >
       {/* Background floating hearts */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {floatingHearts.map((heart) => (
           <motion.span
             key={heart.id}
-            className="absolute text-[#f7c5cc]"
+            className="absolute text-[#fdf9f764]"
             style={{
               left: `${heart.left}%`,
               bottom: "-10%",
@@ -137,20 +142,20 @@ export function ValentineQuestion() {
         <div className="mt-10 flex justify-center">
           <StarBorder
             as="div"
-            color="#f7c5cc"
+            color="#fdf9f764"
             speed="4s"
             className="w-full max-w-xl"
-            innerClassName="relative z-1 bg-gradient-to-b from-[#1f1111] to-[#2a1717] border border-[#5f3340] text-white text-center py-[20px] px-[26px] rounded-[20px]"
+            innerClassName="relative z-1 bg-gradient-to-b from-[#021211] to-[#04201e] border border-[#04201e] text-[#fdf9f7] text-center py-[20px] px-[26px] rounded-[20px]"
           >
             <div className="flex min-h-[190px] flex-col items-center justify-center gap-5">
-              <p className="font-heading text-sm uppercase tracking-[0.3em] text-[#f7c5cc]/70">
+              <p className="font-heading text-sm uppercase tracking-[0.3em] text-[#fdf9f764]/70">
                 The moment of truth
               </p>
 
-              <ClickSpark sparkColor="#f7c5cc" sparkRadius={28} sparkCount={12}>
+              <ClickSpark sparkColor="#fdf9f764" sparkRadius={28} sparkCount={12}>
                 <button
                   onClick={() => setAccepted(true)}
-                  className="font-heading rounded-full bg-[#dc143c] px-10 py-4 text-xl font-semibold text-[#fff8f0] shadow-[0_8px_32px_rgba(220,20,60,0.5)] transition-all duration-300 hover:scale-110 hover:bg-[#e8163f] hover:shadow-[0_12px_44px_rgba(220,20,60,0.65)] active:scale-95 sm:px-12 sm:text-2xl"
+                  className="font-heading rounded-full bg-[#fdf7f9] px-10 py-4 text-xl font-semibold text-[#062d2a] shadow-[0_8px_32px_rgba(6,45,42,0.5)] transition-all duration-300 hover:scale-110 hover:bg-[#fdf8f9] hover:shadow-[0_12px_44px_rgba(6,45,42,0.65)] active:scale-95 sm:px-12 sm:text-2xl"
                 >
                   Yes, absolutely &#10084;
                 </button>
@@ -165,7 +170,7 @@ export function ValentineQuestion() {
                     animate={{ x: noState.x, y: noState.y, scale: noState.scale }}
                     exit={{ opacity: 0, scale: 0 }}
                     transition={{ type: "spring", stiffness: 200, damping: 14 }}
-                    className="rounded-full border border-[#f7c5cc]/50 px-6 py-2 text-lg text-[#f7c5cc] transition-colors hover:border-[#f7c5cc]"
+                    className="rounded-full border border-[#fdf9f764]/50 px-6 py-2 text-lg text-[#fdf9f764] transition-colors hover:border-[#fdf9f764]"
                   >
                     {noText}
                   </motion.button>
@@ -176,7 +181,7 @@ export function ValentineQuestion() {
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="text-lg text-[#f7c5cc]/80"
+                  className="text-lg text-[#fdf9f764]/80"
                 >
                   That is what I thought... now press Yes!
                 </motion.p>
@@ -194,14 +199,14 @@ export function ValentineQuestion() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-[#9b1b30]/97 px-4 text-center"
+            className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-[#062d2a]/97 px-4 text-center"
           >
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
             >
-              <h3 className="font-heading text-5xl font-bold sm:text-7xl">She said yes!</h3>
+              <h3 className="font-heading text-5xl font-bold sm:text-7xl">He said yes!</h3>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -250,7 +255,7 @@ export function ValentineQuestion() {
 
             {/* Large pulsing hearts at the center background */}
             <motion.div
-              className="pointer-events-none absolute text-[#dc143c]/20"
+              className="pointer-events-none absolute text-[#fdf9f7]/20"
               animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.3, 0.15] }}
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               style={{ fontSize: "280px" }}

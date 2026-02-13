@@ -37,11 +37,11 @@ export function Preloader({ onFinished }: PreloaderProps) {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[100] flex items-end justify-end bg-[#fff8f0] p-6 sm:p-8"
+      className="fixed inset-0 z-[100] flex items-end justify-end bg-[#062d2a] p-6 sm:p-8"
     >
       <div className="text-right">
-        <p className="font-heading text-xs uppercase tracking-[0.3em] text-[#9b1b30]">Loading story</p>
-        <p className="font-heading mt-2 text-4xl font-bold leading-none text-[#dc143c] sm:text-6xl">
+        <p className="font-heading text-xs uppercase tracking-[0.3em] text-[#fdf9f7]">Loading story</p>
+        <p className="font-heading mt-2 text-4xl font-bold leading-none text-[#fdf9f7] sm:text-6xl">
           <CountUp to={100} from={0} duration={10} className="tabular-nums" />%
         </p>
       </div>

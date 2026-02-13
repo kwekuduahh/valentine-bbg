@@ -30,7 +30,7 @@ export function FloatingHearts({ count = 14 }: FloatingHeartsProps) {
       {hearts.map((heart) => (
         <motion.span
           key={heart.id}
-          className="absolute text-[#dc143c]"
+          className="absolute text-[#fdf9f7]"
           style={{
             left: `${heart.left}%`,
             bottom: "-8%",

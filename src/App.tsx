@@ -18,7 +18,7 @@ function App() {
   const handlePreloaderFinish = useCallback(() => setLoadingDone(true), [])
 
   return (
-    <main className="relative min-h-screen bg-[#fff8f0]">
+    <main className="relative min-h-screen bg-[#062d2a]">
       {/* Preloader — highest z-index, covers everything */}
       {!loadingDone && <Preloader onFinished={handlePreloaderFinish} />}
 
@@ -59,11 +59,11 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-[#fff8f0] px-4 py-8 text-center sm:py-12">
-          <p className="font-heading text-xs uppercase tracking-[0.3em] text-[#9b1b30]">
+        <footer className="bg-[#062d2a] px-4 py-8 text-center sm:py-12">
+          <p className="font-heading text-xs uppercase tracking-[0.3em] text-[#fdf9f7]">
             Made with love, for us
           </p>
-          <p className="mt-2 text-lg text-[#5a4030] sm:text-xl">
+          <p className="mt-2 text-lg text-[#fdf9f7] sm:text-xl">
             Every pixel here is a tiny piece of my heart.
           </p>
         </footer>

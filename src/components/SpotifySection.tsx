@@ -7,23 +7,23 @@ export function SpotifySection() {
   return (
     <section className="px-4 py-18 sm:px-6 sm:py-24">
       <div className="mx-auto max-w-4xl">
-        <div className="mb-5 flex items-center justify-center gap-3 text-[#9b1b30]">
+        <div className="mb-5 flex items-center justify-center gap-3 text-[#fdf9f7]">
           <MusicIcon size={34} />
-          <p className="font-heading text-xs uppercase tracking-[0.3em]">Our soundtrack</p>
+          <p className="font-heading text-xs uppercase tracking-[0.3em] text-[#fdf9f7">Our soundtrack</p>
         </div>
 
-        <SpotlightCard className="border-[#eab8b2] bg-[#1f1111] p-4 sm:p-8" spotlightColor="rgba(220, 20, 60, 0.33)">
+        <SpotlightCard className="border-[#fdf9f764] bg-[#021211] p-4 sm:p-8" spotlightColor="rgba(6, 45, 42, 0.33)">
           <div className="flex justify-center">
             <GradientText
-              className="font-heading text-3xl sm:text-4xl"
-              colors={["#dc143c", "#f7c5cc", "#ff9ab0"]}
+              className="font-heading text-3xl sm:text-4xl text-[#fdf9f7]"
+              colors={["#fdf9f7", "#fdf9f764", "#fdf9f7"]}
               animationSpeed={8}
             >
               Our Playlist
             </GradientText>
           </div>
 
-          <div className="mt-5 overflow-hidden rounded-2xl border border-[#5f3340]">
+          <div className="mt-5 overflow-hidden rounded-2xl border border-[#04201e]">
             <iframe
               title="Valentine placeholder playlist"
               src={spotifyPlaceholder}

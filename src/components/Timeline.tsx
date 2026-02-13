@@ -20,22 +20,36 @@ type TimelineProps = {
   milestones: Milestone[]
 }
 
+const milestoneIcons = ["\u2665", "\u2708", "\u2726", "\u221e"] as const
+
 export function Timeline({ milestones }: TimelineProps) {
   return (
-    <DiceTimeline className="[--timeline-connector-thickness:0.14rem] [--timeline-dot-size:0.95rem]">
-      {milestones.map((item) => (
-        <TimelineItem key={`${item.year}-${item.title}`}>
-          <TimelineDot className="border-[#dc143c] bg-[#fff8f0]" />
-          <TimelineConnector className="bg-[#eab8b2] data-completed:bg-[#dc143c]" />
+    <DiceTimeline
+      variant="alternate"
+      className="[--timeline-connector-thickness:0.14rem] [--timeline-dot-size:2.1rem]"
+    >
+      {milestones.map((item, index) => (
+        <TimelineItem
+          key={`${item.year}-${item.title}`}
+          className="max-sm:w-full max-sm:pb-8 max-sm:pl-0 max-sm:pr-0"
+        >
+          <TimelineDot className="border-[#fdf9f764] bg-[#021211] text-[#fdf9f7] max-sm:hidden">
+            <span className="font-heading text-base leading-none">{milestoneIcons[index % milestoneIcons.length]}</span>
+          </TimelineDot>
+          <TimelineConnector className="bg-[#fdf9f764] data-completed:bg-[#04201e] max-sm:hidden" />
 
-          <TimelineContent className="rounded-2xl border border-[#eab8b2] bg-[#fff8f0] p-4 sm:p-6">
+          <TimelineContent className="rounded-2xl border border-[#fdf9f764] bg-[#062d2a] p-4 sm:p-6 relative">
+            {index === 0 && <img src="/star.svg" alt="glasses-bg" className="absolute -bottom-8 left-0 w-16 h-16 object-contain" />}
+            {index === 1 && <img src="/spec.svg" alt="glasses-bg" className="absolute top-0 -left-5 w-24 h-24 object-contain -rotate-12" />}
+            {index === 2 && <img src="/gun-go-green.svg" alt="gun-bg" className="absolute -bottom-16 right-0 w-24 h-24 object-contain z-40 rotate-12" />}
             <TimelineHeader>
-              <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#9b1b30]">
+              <img src={`/assets/timeline-${index + 1}.png`} alt={item.title} className="w-48 h-48 object-cover" />
+              <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#fdf9f7]">
                 {item.year}
               </TimelineTime>
-              <TimelineTitle className="font-heading text-2xl text-[#dc143c] sm:text-3xl">{item.title}</TimelineTitle>
+              <TimelineTitle className="font-heading text-2xl text-[#fdf9f7] sm:text-3xl">{item.title}</TimelineTitle>
             </TimelineHeader>
-            <TimelineDescription className="mt-2 text-2xl text-[#5a4030] sm:text-3xl">{item.description}</TimelineDescription>
+            <TimelineDescription className="mt-2 text-2xl text-[#fdf9f7] sm:text-3xl">{item.description}</TimelineDescription>
           </TimelineContent>
         </TimelineItem>
       ))}

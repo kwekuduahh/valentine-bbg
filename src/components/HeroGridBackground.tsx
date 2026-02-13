@@ -35,7 +35,7 @@ export function HeroGridBackground() {
         {Array.from({ length: 16 }, (_, i) => (
           <div
             key={`m-${i}`}
-            className="border border-[#e8ddd4] bg-[#fff8f0]"
+            className="border border-[#fdf9f764] bg-[#062d2a]"
           >
             {mobileFill.has(i) && (
               <div
@@ -51,7 +51,7 @@ export function HeroGridBackground() {
         {Array.from({ length: 64 }, (_, i) => (
           <div
             key={`d-${i}`}
-            className="border border-[#e8ddd4] bg-[#fff8f0]"
+            className="border border-[#fdf9f764] bg-[#062d2a]"
           >
             {desktopFill.has(i) && (
               <div

@@ -6,10 +6,10 @@ type HighlightCardsProps = {
   cardClassName: string
 }
 
-export function HighlightCards({ items, accentColorClass, cardClassName }: HighlightCardsProps) {
+export function HighlightCards({ items, cardClassName }: HighlightCardsProps) {
   return (
     <div className="space-y-4">
-      {items.map((item, index) => (
+      {items.map((item) => (
         <GlareHover
           key={item}
           width="100%"
@@ -23,8 +23,8 @@ export function HighlightCards({ items, accentColorClass, cardClassName }: Highl
           style={{ minHeight: "unset" }}
         >
           <article className="w-full px-4 py-5 sm:px-5">
-            <p className={`font-heading text-xs uppercase tracking-[0.28em] ${accentColorClass}`}>Highlight {index + 1}</p>
-            <p className="mt-2 text-2xl leading-relaxed text-[#5a4030] sm:text-3xl">{item}</p>
+            {/* <p className={`font-heading text-xs uppercase tracking-[0.28em] ${accentColorClass}`}>Highlight {index + 1}</p> */}
+            <p className="mt-2 text-3xl leading-relaxed text-[#fdf9f7] sm:text-4xl">{item}</p>
           </article>
         </GlareHover>
       ))}
