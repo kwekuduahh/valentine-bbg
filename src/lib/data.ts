@@ -5,36 +5,36 @@ export type StoryPage = {
 };
 
 export const heroIntro = {
-	heading: 'The Story of Two Love Birds',
+	heading: 'Two souls, one beautiful journey',
 	subheading:
-		'In a city full of passing moments, two hearts found the same rhythm. This page is the little universe they are building together.',
+		"There's nothing better than getting lost in a magical world between pages or dancing around the living room to our favorite songs. I bring the magic and stories, he brings the logic and adventure - Together, we're the perfect balance. We're two different souls who found each other and decided to write our story together.",
 };
 
 export const storyPages: StoryPage[] = [
 	{
-		title: 'A Serendipitous Hello',
+		title: 'The Day Everything Changed',
 		description:
-			'It started with a soft hello and a smile that lingered longer than expected. Neither of them knew that this small moment would become the beginning of forever.',
-		image: '/storybook-page-1.svg',
+			'We met playing Connect Four. He says it was my smile and laugh that drew him in from across the room. For me, it was his quiet demeanor — calm, steady, and intriguing. We started talking, and hours flew by like minutes. Who knew a simple game could lead to the most important connection of our lives?',
+		image: '/storybook-page-1.jpeg',
 	},
 	{
-		title: 'First Long Conversation',
+		title: 'Our First Date',
 		description:
-			'Messages turned into midnight conversations, and hours felt like minutes. Every new detail felt familiar, like reconnecting with someone they had always known.',
-		image: '/assets/hero-grid-title.avif',
+			"Our very first date was at a football match — which is hilariously ironic because neither of us actually likes football or soccer! But we didn't care. We spent the entire time talking, laughing, and stealing glances at each other instead of watching the game. It was perfect because it was us — not the sport.",
+		image: '/storybook-page-2.jpeg',
 	},
 	{
-		title: 'The First Date',
+		title: 'The Realization',
 		description:
-			'The first date had laughter, shy glances, and a quiet certainty in the air. Somewhere between the jokes and the silence, their story truly began.',
-		image: '/assets/hero-grid-title.avif',
+			"Somewhere between the Connect Four pieces falling into place and that awkward football date, we realized we were stuck with each other — in the best way possible. He became my forever baby, and I became his. And we've been inseparable ever since.",
+		image: '/storybook-page-3.jpeg',
 	},
-	{
-		title: 'Growing Together',
-		description:
-			'With each passing day, they learned to choose each other in little ways. Love became less about grand gestures and more about consistent tenderness.',
-		image: '/storybook-page-4.svg',
-	},
+	// {
+	// 	title: 'Growing Together',
+	// 	description:
+	// 		"Somewhere between the Connect Four pieces falling into place and that awkward football date, we realized we were stuck with each other — in the best way possible. He became my forever baby, and I became his. And we've been inseparable ever since.",
+	// 	image: '/storybook-page-4.jpeg',
+	// },
 ];
 
 export const herHighlights = [
@@ -54,36 +54,34 @@ export const hisHighlights = [
 export const roadmapMilestones = [
 	{
 		year: '2026',
-		title: 'Building Our Nest',
+		title: 'Always There for Me',
 		description:
-			'Create a home full of laughter, prayer, peace, and shared dreams.',
+			"No matter what's happening, he's my constant. Through good days and bad, he's the steady presence I can always count on. He never lets me face anything alone.",
 	},
 	{
 		year: '2027',
-		title: 'First Big Adventure',
+		title: 'Makes Me Laugh',
 		description:
-			'Visit new cities, collect memories, and document every sweet moment.',
+			'His sense of humor is my favorite thing. He knows exactly how to make me laugh, even on my hardest days. Our inside jokes are my treasure.',
 	},
 	{
 		year: '2028',
-		title: 'Growing in Purpose',
+		title: 'Pushes Me to Be My Best',
 		description:
-			"Support each other's goals and build a life rooted in love and impact.",
+			"He believes in me even when I don't believe in myself. He pushes me to be my absolute best, not because he wants me to change, but because he sees my potential and won't let me settle for less.",
 	},
 	{
 		year: 'Forever',
-		title: 'Choosing Each Other Daily',
+		title: 'Forever Baby',
 		description:
-			'Keep writing this story, one faithful and joyful chapter at a time.',
+			"Forever Baby He's my forever baby. We're stuck with each other forever, and I wouldn't have it any other way. We'll scale all obstacles together, hand in hand.",
 	},
 ];
 
 export const destinationCards = [
-	'/destination-1.svg',
-	'/destination-2.svg',
-	'/destination-3.svg',
-	'/destination-4.svg',
-	'/destination-5.svg',
+	'/destination-1.jpg',
+	'/destination-2.jpg',
+	'/destination-3.jpg',
 ];
 
 export const moodboardItems = [
@@ -96,8 +94,8 @@ export const moodboardItems = [
 ];
 
 export const profileImages = {
-	her: '/her-profile.svg',
-	him: '/his-profile.svg',
+	her: '/her-profile.jpeg',
+	him: '/his-profile.jpeg',
 };
 
 export const spotifyPlaceholder =

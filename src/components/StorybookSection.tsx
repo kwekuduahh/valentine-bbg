@@ -14,7 +14,7 @@ export function StorybookSection() {
           A tiny storybook of the moments that changed everything.
         </p>
 
-        <div className="mt-10 rounded-3xl border border-[#fdf9f764] bg-[#062d2a]/85 p-4 shadow-[0_18px_60px_rgba(6,45,42,0.08)] sm:p-8 relative">
+        <div className="mt-10 rounded-3xl border border-[#1a241e64] bg-[#082726] p-4 shadow-[0_18px_60px_rgba(6,45,42,0.08)] sm:p-8 relative">
           <img src="/star.svg" alt="glasses-bg" className="absolute -top-5 -left-6 w-12 h-12 object-contain" />
           <img src="/gun-go.svg" alt="gun-bg" className="absolute -bottom-24 right-0 w-48 h-48 object-contain z-40 -rotate-12" />
 
@@ -25,7 +25,7 @@ export function StorybookSection() {
             blur
             duration={900}
             initialOpacity={0}
-            className="mt-8 rounded-2xl bg-[#062d2a] p-5"
+            className="mt-8 rounded-2xl bg-[#082726] p-5"
           >
             <h3 className="font-heading text-2xl text-[#fdf9f7] sm:text-3xl">{storyPages[currentPage].title}</h3>
             <p className="mt-2 text-2xl leading-normal text-[#fdf9f7] sm:text-3xl">{storyPages[currentPage].description}</p>

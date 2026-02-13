@@ -10,15 +10,15 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url(/assets/hero-grid-title.avif)",
-          maskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
+          backgroundImage: "url(/hero-grid-title.jpeg)",
+          maskImage: "linear-gradient(to bottom, black 20%, transparent 100%)",
           WebkitMaskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
         }}
       />
       <FloatingHearts />
       <RevealOnScroll effect="fadeIn" className="mx-auto w-full max-w-3xl text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#062d2a]">Our beginning</p>
-        <h1 className="font-heading mt-4 text-4xl font-bold text-[#062d2a] sm:text-6xl">{heroIntro.heading}</h1>
+        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Our beginning</p>
+        <h1 className="font-heading mt-4 max-sm:text-5xl text-7xl font-bold text-[#ffc041] sm:text-6xl">{heroIntro.heading}</h1>
         <BlurText
           text={heroIntro.subheading}
           className="mx-auto mt-8 max-w-2xl text-3xl text-[#fdf9f7] sm:text-4xl"

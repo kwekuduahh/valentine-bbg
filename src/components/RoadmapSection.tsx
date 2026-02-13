@@ -1,28 +1,23 @@
-import { MoodBoard } from "@/components/MoodBoard"
+// import { MoodBoard } from "@/components/MoodBoard"
 import { Timeline } from "@/components/Timeline"
-import { destinationCards, moodboardItems, roadmapMilestones } from "@/lib/data"
+import { destinationCards, roadmapMilestones } from "@/lib/data"
 
 const placesToVisit = [
   {
     number: "01",
-    title: "Bali Getaway",
-    description: "Sunset walks, ocean breeze, and slow mornings together.",
+    title: "World Explorers",
+    description: "From hidden beaches to mountain peaks, we'll travel the world together, collecting stamps in our passports and memories in our hearts.",
   },
   {
     number: "02",
-    title: "Tokyo Nights",
-    description: "Neon streets, ramen dates, and midnight city adventures.",
+    title: "Our Cabin",
+    description: "A little cabin near a stream, where we can grow old together. Mornings with coffee on the porch, evenings with books by the fire, and a lifetime of love in between.",
   },
   {
     number: "03",
-    title: "Paris Dream",
-    description: "Cafe mornings, museum days, and kisses by the Seine.",
-  },
-  {
-    number: "04",
-    title: "Santorini Escape",
-    description: "Blue domes, cliffside views, and golden-hour promises.",
-  },
+    title: "Together Forever",
+    description: "No matter what obstacles come our way, we'll scale them all together. Because we're stuck with each other forever, and that's exactly how we want it.",
+  }
 ] as const
 
 function PlaceCard({
@@ -45,7 +40,7 @@ function PlaceCard({
       <p className="text-xs font-semibold tracking-[0.2em] text-[#3d372f]">{number}</p>
       <h4 className="font-heading mt-3 text-3xl leading-[0.9] sm:text-[2.1rem]">{title}</h4>
       <p className="mt-3 text-sm leading-5 text-[#47413a]">{description}</p>
-      <img src={image} alt="" className="mx-auto mt-4 h-10 w-10 object-contain" loading="lazy" />
+      <img src={image} alt="" className="mt-2 h-32 w-full object-cover rounded-2xl" loading="lazy" />
     </article>
   )
 }
@@ -64,9 +59,9 @@ export function RoadmapSection() {
         </div>
 
         {/* <h3 className="font-heading mt-16 text-2xl text-[#fdf9f7] sm:text-4xl mx-auto text-center">Future Moodboard</h3> */}
-        <div className="mt-5">
+        {/* <div className="mt-5">
           <MoodBoard items={moodboardItems} />
-        </div>
+        </div> */}
 
         {/* <h3 className="font-heading mt-16 text-2xl text-[#fdf9f7] sm:text-4xl">Places We Will Visit</h3> */}
         <div className="mt-8 overflow-hidden rounded-[2rem] border border-none bg-none px-4 pt-10 pb-5 sm:px-7 sm:pt-12 ">
@@ -79,7 +74,7 @@ export function RoadmapSection() {
             </p>
           </div>
 
-          <div className="lg:mt-16 mt-10 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:mt-16 mt-10 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
             {placesToVisit.map((place, index) => (
               <PlaceCard
                 key={place.number}

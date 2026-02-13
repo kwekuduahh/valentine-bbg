@@ -79,7 +79,7 @@ export function MoodBoard({ items }: MoodBoardProps) {
         <div className="relative md:min-h-[560px]">
           <div className="relative z-10 mx-auto max-w-3xl px-2 py-10 text-center md:absolute md:inset-0 md:flex md:items-center md:justify-center md:py-0">
             <p className="font-heading text-4xl leading-[0.95] tracking-tight text-[#fdf9f7] sm:text-5xl md:text-6xl">
-              Every day with you feels like the beginning of something beautiful,
+              Every day with you feels like the beginning of something beautiful
             </p>
           </div>
 

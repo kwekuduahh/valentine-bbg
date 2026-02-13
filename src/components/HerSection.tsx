@@ -1,7 +1,7 @@
 import HeartIcon from "@/components/heart-icon"
 import { HighlightCards } from "@/components/HighlightCards"
-import Lanyard from "@/components/Lanyard"
-import { herHighlights, profileImages } from "@/lib/data"
+// import Lanyard from "@/components/Lanyard"
+import { herHighlights } from "@/lib/data"
 import { DrawLineText } from "../../components/gsap/draw-line-text"
 import { StaggerOnScroll } from "../../components/gsap/stagger-on-scroll"
 
@@ -13,9 +13,10 @@ export function HerSection() {
           <DrawLineText text="The Woman" color="#062d2a" fontSize={54} strokeWidth={1.2} />
         </div>
 
-        <div className="grid items-center gap-8 md:grid-cols-2">
-          <div>
-            <Lanyard className="h-[1020px] w-full" cardImageSrc={profileImages.her} />
+        <div className="grid items-center gap-8 grid-cols-1 md:grid-cols-2">
+          <div className="h-[500px] w-full">
+            {/* <Lanyard className="h-[1020px] w-full" cardImageSrc={profileImages.her} /> */}
+            <img src="/her-profile.jpeg" alt="her-profile" className="w-full h-full object-cover rounded-3xl" />
           </div>
 
           <div>

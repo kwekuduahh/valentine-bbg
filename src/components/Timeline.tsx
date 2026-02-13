@@ -6,7 +6,6 @@ import {
   TimelineDot,
   TimelineHeader,
   TimelineItem,
-  TimelineTime,
   TimelineTitle,
 } from "@/components/ui/timeline"
 
@@ -43,10 +42,10 @@ export function Timeline({ milestones }: TimelineProps) {
             {index === 1 && <img src="/spec.svg" alt="glasses-bg" className="absolute top-0 -left-5 w-24 h-24 object-contain -rotate-12" />}
             {index === 2 && <img src="/gun-go-green.svg" alt="gun-bg" className="absolute -bottom-16 right-0 w-24 h-24 object-contain z-40 rotate-12" />}
             <TimelineHeader>
-              <img src={`/assets/timeline-${index + 1}.png`} alt={item.title} className="w-48 h-48 object-cover" />
-              <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#fdf9f7]">
+              <img src={`/timeline-${index + 1}.jpeg`} alt={item.title} className="w-full h-100 object-cover rounded-2xl" />
+              {/* <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#fdf9f7]">
                 {item.year}
-              </TimelineTime>
+              </TimelineTime> */}
               <TimelineTitle className="font-heading text-2xl text-[#fdf9f7] sm:text-3xl">{item.title}</TimelineTitle>
             </TimelineHeader>
             <TimelineDescription className="mt-2 text-2xl text-[#fdf9f7] sm:text-3xl">{item.description}</TimelineDescription>
