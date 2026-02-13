@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <!-- Moodboard: Travel & Explore  suitcases, passport stamps, world map hints -->
+  <rect width="800" height="900" fill="#fff8f0"/>
+  <!-- World map abstract suggestion -->
+  <circle cx="300" cy="300" r="160" fill="none" stroke="#eab8b2" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="500" cy="350" r="120" fill="none" stroke="#f7c5cc" stroke-width="1" opacity="0.25"/>
+  <!-- Abstract continents -->
+  <path d="M200 260 Q230 230 280 240 Q310 250 320 280 Q300 310 260 300 Q220 290 200 260Z" fill="#f7c5cc" opacity="0.25"/>
+  <path d="M350 220 Q390 200 420 220 Q440 250 420 270 Q380 280 350 260Z" fill="#f4a6b1" opacity="0.2"/>
+  <path d="M460 300 Q500 270 540 290 Q560 320 540 350 Q500 360 470 340Z" fill="#dc143c" opacity="0.12"/>
+  <!-- Suitcase -->
+  <rect x="250" y="550" width="140" height="100" rx="12" fill="#dc143c" opacity="0.25"/>
+  <rect x="270" y="540" width="100" height="14" rx="7" fill="#9b1b30" opacity="0.3"/>
+  <rect x="290" y="528" width="60" height="16" rx="5" fill="#9b1b30" opacity="0.2"/>
+  <line x1="320" y1="570" x2="320" y2="630" stroke="#fff8f0" stroke-width="2" opacity="0.3"/>
+  <!-- Smaller bag -->
+  <rect x="420" y="580" width="100" height="80" rx="10" fill="#f7c5cc" opacity="0.35"/>
+  <rect x="440" y="572" width="60" height="12" rx="6" fill="#f4a6b1" opacity="0.3"/>
+  <!-- Passport stamp circles -->
+  <circle cx="600" cy="250" r="50" fill="none" stroke="#dc143c" stroke-width="2" opacity="0.2" stroke-dasharray="4 3"/>
+  <text x="600" y="255" font-size="14" fill="#dc143c" font-family="sans-serif" text-anchor="middle" opacity="0.3">PARIS</text>
+  <circle cx="180" cy="450" r="40" fill="none" stroke="#9b1b30" stroke-width="2" opacity="0.2" stroke-dasharray="4 3"/>
+  <text x="180" y="455" font-size="12" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" opacity="0.3">TOKYO</text>
+  <circle cx="650" cy="470" r="45" fill="none" stroke="#f4a6b1" stroke-width="2" opacity="0.2" stroke-dasharray="4 3"/>
+  <text x="650" y="475" font-size="13" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" opacity="0.3">BALI</text>
+  <!-- Plane trail -->
+  <path d="M100 180 Q300 130 500 200 Q650 260 720 200" stroke="#dc143c" stroke-width="1.5" fill="none" opacity="0.2" stroke-dasharray="6 4"/>
+  <!-- Plane icon -->
+  <g transform="translate(720, 195) rotate(-20) scale(0.6)">
+    <path d="M0 0 L-10 -5 L-30 -3 L-10 0 L-30 3 L-10 5Z" fill="#dc143c" opacity="0.4"/>
+  </g>
+  <!-- Hearts scattered -->
+  <g transform="translate(400, 450) scale(0.3)">
+    <path d="M0 -15 C-20 -40 -48 -15 -28 8 L0 32 L28 8 C48 -15 20 -40 0 -15Z" fill="#dc143c" opacity="0.35"/>
+  </g>
+  <g transform="translate(550, 160) scale(0.25)">
+    <path d="M0 -15 C-20 -40 -48 -15 -28 8 L0 32 L28 8 C48 -15 20 -40 0 -15Z" fill="#f7c5cc" opacity="0.4"/>
+  </g>
+  <text x="400" y="830" font-size="28" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" opacity="0.6">Travel Together</text>
+</svg>

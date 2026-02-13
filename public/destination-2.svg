@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Destination: Santorini  white buildings, blue domes -->
+  <defs>
+    <linearGradient id="d2bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd7cc"/>
+      <stop offset="100%" stop-color="#fff8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="20" fill="url(#d2bg)"/>
+  <!-- Sea -->
+  <path d="M0 250 Q100 240 200 250 Q300 260 400 245 L400 350 L0 350Z" fill="#f7c5cc" opacity="0.25"/>
+  <!-- Buildings -->
+  <rect x="60" y="180" width="80" height="170" rx="6" fill="#fff8f0" opacity="0.8" stroke="#eab8b2" stroke-width="1"/>
+  <rect x="160" y="150" width="90" height="200" rx="6" fill="#fff8f0" opacity="0.8" stroke="#eab8b2" stroke-width="1"/>
+  <rect x="270" y="200" width="70" height="150" rx="6" fill="#fff8f0" opacity="0.8" stroke="#eab8b2" stroke-width="1"/>
+  <!-- Blue domes -->
+  <ellipse cx="205" cy="150" rx="35" ry="25" fill="#dc143c" opacity="0.25"/>
+  <ellipse cx="100" cy="180" rx="28" ry="20" fill="#9b1b30" opacity="0.2"/>
+  <!-- Windows -->
+  <rect x="80" y="220" width="16" height="20" rx="3" fill="#dc143c" opacity="0.15"/>
+  <rect x="108" y="220" width="16" height="20" rx="3" fill="#dc143c" opacity="0.15"/>
+  <rect x="180" y="200" width="16" height="20" rx="3" fill="#dc143c" opacity="0.15"/>
+  <rect x="210" y="200" width="16" height="20" rx="3" fill="#dc143c" opacity="0.15"/>
+  <!-- Steps -->
+  <path d="M150 350 L150 330 L170 330 L170 310 L190 310" stroke="#eab8b2" stroke-width="2" fill="none" opacity="0.4"/>
+  <!-- Sun -->
+  <circle cx="340" cy="80" r="30" fill="#dc143c" opacity="0.12"/>
+  <text x="200" y="470" font-size="24" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" font-weight="600">Santorini</text>
+</svg>

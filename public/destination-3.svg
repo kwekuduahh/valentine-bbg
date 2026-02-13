@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Destination: Kyoto  torii gate, cherry blossoms -->
+  <rect width="400" height="500" rx="20" fill="#fff8f0"/>
+  <!-- Torii gate -->
+  <rect x="120" y="160" width="20" height="220" fill="#dc143c" opacity="0.35"/>
+  <rect x="260" y="160" width="20" height="220" fill="#dc143c" opacity="0.35"/>
+  <rect x="100" y="155" width="200" height="16" rx="3" fill="#dc143c" opacity="0.4"/>
+  <rect x="110" y="200" width="180" height="10" rx="3" fill="#dc143c" opacity="0.3"/>
+  <path d="M95 155 Q200 130 305 155" stroke="#dc143c" stroke-width="8" fill="none" opacity="0.35"/>
+  <!-- Path through gate -->
+  <path d="M200 500 Q200 420 200 380" stroke="#eab8b2" stroke-width="20" fill="none" opacity="0.15" stroke-linecap="round"/>
+  <!-- Cherry blossom clusters -->
+  <circle cx="80" cy="120" r="20" fill="#f7c5cc" opacity="0.45"/>
+  <circle cx="60" cy="140" r="15" fill="#f4a6b1" opacity="0.4"/>
+  <circle cx="100" cy="100" r="12" fill="#ffd7cc" opacity="0.4"/>
+  <circle cx="50" cy="110" r="10" fill="#dc143c" opacity="0.15"/>
+  <circle cx="320" cy="110" r="22" fill="#f7c5cc" opacity="0.4"/>
+  <circle cx="340" cy="130" r="16" fill="#f4a6b1" opacity="0.35"/>
+  <circle cx="350" cy="100" r="12" fill="#ffd7cc" opacity="0.35"/>
+  <!-- Falling petals -->
+  <circle cx="150" cy="260" r="3" fill="#f7c5cc" opacity="0.5"/>
+  <circle cx="240" cy="290" r="2.5" fill="#f4a6b1" opacity="0.4"/>
+  <circle cx="180" cy="310" r="2" fill="#ffd7cc" opacity="0.45"/>
+  <circle cx="220" cy="250" r="3" fill="#f7c5cc" opacity="0.35"/>
+  <text x="200" y="470" font-size="24" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" font-weight="600">Kyoto</text>
+</svg>

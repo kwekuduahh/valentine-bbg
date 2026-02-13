@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <!-- Moodboard: Cozy Home  bookshelf, plant, warm interior -->
+  <rect width="800" height="900" fill="#fff3e6"/>
+  <!-- Window -->
+  <rect x="280" y="80" width="240" height="300" rx="16" fill="#fff8f0" stroke="#eab8b2" stroke-width="3"/>
+  <line x1="400" y1="80" x2="400" y2="380" stroke="#eab8b2" stroke-width="2"/>
+  <line x1="280" y1="230" x2="520" y2="230" stroke="#eab8b2" stroke-width="2"/>
+  <!-- Light through window -->
+  <ellipse cx="400" cy="200" rx="90" ry="100" fill="#ffd7cc" opacity="0.2"/>
+  <!-- Bookshelf -->
+  <rect x="80" y="420" width="260" height="240" rx="8" fill="#5a4030" opacity="0.15"/>
+  <rect x="90" y="440" width="60" height="80" rx="4" fill="#dc143c" opacity="0.3"/>
+  <rect x="155" y="450" width="50" height="70" rx="4" fill="#9b1b30" opacity="0.25"/>
+  <rect x="210" y="435" width="55" height="85" rx="4" fill="#f4a6b1" opacity="0.35"/>
+  <rect x="270" y="445" width="50" height="75" rx="4" fill="#f7c5cc" opacity="0.3"/>
+  <line x1="85" y1="530" x2="335" y2="530" stroke="#5a4030" stroke-width="2" opacity="0.2"/>
+  <rect x="100" y="545" width="45" height="65" rx="4" fill="#dc143c" opacity="0.2"/>
+  <rect x="150" y="550" width="55" height="60" rx="4" fill="#f7c5cc" opacity="0.3"/>
+  <rect x="210" y="540" width="50" height="70" rx="4" fill="#9b1b30" opacity="0.2"/>
+  <!-- Plant -->
+  <rect x="580" y="520" width="50" height="70" rx="10" fill="#5a4030" opacity="0.2"/>
+  <circle cx="605" cy="500" r="40" fill="#9b1b30" opacity="0.15"/>
+  <circle cx="585" cy="480" r="30" fill="#dc143c" opacity="0.12"/>
+  <circle cx="625" cy="485" r="28" fill="#f4a6b1" opacity="0.15"/>
+  <!-- Cozy rug -->
+  <ellipse cx="450" cy="750" rx="200" ry="60" fill="#f7c5cc" opacity="0.3"/>
+  <!-- Two mugs -->
+  <rect x="410" y="700" width="28" height="24" rx="4" fill="#dc143c" opacity="0.3"/>
+  <rect x="460" y="702" width="26" height="22" rx="4" fill="#9b1b30" opacity="0.3"/>
+  <text x="400" y="860" font-size="28" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" opacity="0.6">Our Cozy Home</text>
+</svg>

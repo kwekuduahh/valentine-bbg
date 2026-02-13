@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <!-- Her profile — elegant feminine silhouette portrait with floral accents -->
+  <defs>
+    <linearGradient id="herBg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="100%" stop-color="#f7c5cc" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="herGlow" cx="0.5" cy="0.4" r="0.45">
+      <stop offset="0%" stop-color="#fff8f0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#fce4ec" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="900" rx="0" fill="url(#herBg)"/>
+  <ellipse cx="400" cy="380" rx="280" ry="260" fill="url(#herGlow)"/>
+  <!-- Decorative floral circles (top-right) -->
+  <circle cx="640" cy="100" r="60" fill="#dc143c" opacity="0.1"/>
+  <circle cx="680" cy="150" r="40" fill="#f4a6b1" opacity="0.15"/>
+  <circle cx="620" cy="160" r="25" fill="#f7c5cc" opacity="0.2"/>
+  <!-- Decorative circles (bottom-left) -->
+  <circle cx="120" cy="740" r="50" fill="#dc143c" opacity="0.1"/>
+  <circle cx="170" cy="780" r="35" fill="#f7c5cc" opacity="0.15"/>
+  <!-- Portrait frame circle -->
+  <circle cx="400" cy="360" r="225" fill="none" stroke="#eab8b2" stroke-width="2" opacity="0.5"/>
+  <circle cx="400" cy="360" r="215" fill="#fff8f0" opacity="0.5"/>
+  <!-- Head -->
+  <ellipse cx="400" cy="280" rx="68" ry="82" fill="#9b1b30" opacity="0.55"/>
+  <!-- Hair — flowing wavy -->
+  <path d="M335 230 Q320 180 340 150 Q370 120 400 115 Q430 110 460 140 Q480 170 465 230" fill="#5a4030" opacity="0.4"/>
+  <path d="M335 250 Q310 280 300 340 Q295 390 310 430" stroke="#5a4030" stroke-width="14" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M465 250 Q490 280 500 340 Q505 390 490 430" stroke="#5a4030" stroke-width="14" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <!-- Neck -->
+  <rect x="382" y="355" width="36" height="40" rx="18" fill="#9b1b30" opacity="0.45"/>
+  <!-- Shoulders/body -->
+  <path d="M320 395 Q340 380 400 385 Q460 380 480 395 Q520 420 530 480 L270 480 Q280 420 320 395Z" fill="#9b1b30" opacity="0.4"/>
+  <!-- Neckline detail -->
+  <path d="M360 395 Q400 420 440 395" stroke="#f7c5cc" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Eyes (subtle) -->
+  <ellipse cx="380" cy="270" rx="8" ry="4" fill="#3d2b1f" opacity="0.35"/>
+  <ellipse cx="420" cy="270" rx="8" ry="4" fill="#3d2b1f" opacity="0.35"/>
+  <!-- Smile -->
+  <path d="M385 305 Q400 318 415 305" stroke="#3d2b1f" stroke-width="2" fill="none" opacity="0.3"/>
+  <!-- Small heart accessory -->
+  <g transform="translate(440, 400) scale(0.35)">
+    <path d="M0 -15 C-20 -40 -48 -15 -28 8 L0 32 L28 8 C48 -15 20 -40 0 -15Z" fill="#dc143c" opacity="0.5"/>
+  </g>
+  <!-- Decorative dots -->
+  <circle cx="260" cy="300" r="4" fill="#f7c5cc" opacity="0.5"/>
+  <circle cx="540" cy="320" r="3" fill="#dc143c" opacity="0.35"/>
+  <circle cx="300" cy="450" r="3" fill="#f4a6b1" opacity="0.4"/>
+  <circle cx="500" cy="250" r="4" fill="#f7c5cc" opacity="0.4"/>
+  <!-- Label -->
+  <rect x="250" y="680" width="300" height="90" rx="20" fill="#fff8f0" opacity="0.85"/>
+  <text x="400" y="720" font-size="32" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" font-weight="600">The Woman</text>
+  <text x="400" y="752" font-size="18" fill="#5a4030" font-family="sans-serif" text-anchor="middle">Kind, brave, beautiful</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <!-- Moodboard: Mountain Adventure  peaks, trail, sunrise -->
+  <defs>
+    <linearGradient id="mb3sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fce4ec"/>
+      <stop offset="60%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#fff3e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#mb3sky)"/>
+  <!-- Sun rays -->
+  <circle cx="400" cy="180" r="60" fill="#dc143c" opacity="0.12"/>
+  <circle cx="400" cy="180" r="100" fill="#ffd7cc" opacity="0.1"/>
+  <!-- Far mountains -->
+  <path d="M0 500 L200 300 L350 420 L500 260 L650 380 L800 320 L800 900 L0 900Z" fill="#9b1b30" opacity="0.15"/>
+  <!-- Near mountains -->
+  <path d="M0 600 L150 400 L300 520 L450 350 L600 480 L750 390 L800 450 L800 900 L0 900Z" fill="#dc143c" opacity="0.12"/>
+  <!-- Snow caps -->
+  <path d="M195 305 L200 300 L205 305" fill="#fff8f0" opacity="0.5"/>
+  <path d="M492 266 L500 260 L508 268" fill="#fff8f0" opacity="0.5"/>
+  <path d="M445 355 L450 350 L455 357" fill="#fff8f0" opacity="0.4"/>
+  <!-- Trail path -->
+  <path d="M300 750 Q350 680 400 700 Q450 720 480 660 Q520 600 550 620" stroke="#9b1b30" stroke-width="3" fill="none" opacity="0.25" stroke-dasharray="8 5"/>
+  <!-- Meadow -->
+  <path d="M0 700 Q200 670 400 700 Q600 730 800 690 L800 900 L0 900Z" fill="#f4a6b1" opacity="0.2"/>
+  <!-- Trees -->
+  <g transform="translate(160, 600)">
+    <rect x="-4" y="0" width="8" height="30" fill="#5a4030" opacity="0.25"/>
+    <path d="M-20 0 L0 -50 L20 0Z" fill="#9b1b30" opacity="0.2"/>
+  </g>
+  <g transform="translate(640, 580)">
+    <rect x="-4" y="0" width="8" height="30" fill="#5a4030" opacity="0.25"/>
+    <path d="M-22 0 L0 -55 L22 0Z" fill="#9b1b30" opacity="0.2"/>
+  </g>
+  <g transform="translate(100, 630)">
+    <rect x="-3" y="0" width="6" height="25" fill="#5a4030" opacity="0.2"/>
+    <path d="M-16 0 L0 -40 L16 0Z" fill="#dc143c" opacity="0.15"/>
+  </g>
+  <!-- Birds -->
+  <path d="M350 150 Q355 143 360 150" stroke="#9b1b30" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M380 140 Q386 132 392 140" stroke="#9b1b30" stroke-width="1.5" fill="none" opacity="0.25"/>
+  <text x="400" y="850" font-size="28" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" opacity="0.6">Mountain Adventures</text>
+</svg>

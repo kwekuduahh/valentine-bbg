@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Destination: Swiss Alps  mountains, cabin, snow -->
+  <defs>
+    <linearGradient id="d5bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" rx="20" fill="url(#d5bg)"/>
+  <!-- Mountains -->
+  <path d="M0 300 L100 140 L180 260 L280 100 L360 220 L400 180 L400 500 L0 500Z" fill="#9b1b30" opacity="0.15"/>
+  <!-- Snow caps -->
+  <path d="M95 148 L100 140 L105 148 Q100 158 95 148Z" fill="#fff8f0" opacity="0.7"/>
+  <path d="M274 108 L280 100 L286 110 Q280 120 274 108Z" fill="#fff8f0" opacity="0.7"/>
+  <!-- Closer mountain -->
+  <path d="M0 380 L120 250 L200 340 L300 220 L400 310 L400 500 L0 500Z" fill="#dc143c" opacity="0.1"/>
+  <!-- Snow on closer mountain -->
+  <path d="M115 258 L120 250 L125 258" fill="#fff8f0" opacity="0.5"/>
+  <path d="M295 228 L300 220 L305 230" fill="#fff8f0" opacity="0.5"/>
+  <!-- Cabin -->
+  <rect x="160" y="340" width="80" height="50" rx="4" fill="#5a4030" opacity="0.25"/>
+  <path d="M150 342 L200 310 L250 342" fill="#9b1b30" opacity="0.2"/>
+  <!-- Chimney -->
+  <rect x="220" y="314" width="12" height="20" fill="#5a4030" opacity="0.2"/>
+  <!-- Smoke -->
+  <path d="M226 310 Q230 295 225 280" stroke="#eab8b2" stroke-width="2" fill="none" opacity="0.2"/>
+  <!-- Window -->
+  <rect x="185" y="355" width="16" height="16" rx="2" fill="#ffd7cc" opacity="0.5"/>
+  <!-- Door -->
+  <rect x="207" y="360" width="14" height="30" rx="2" fill="#3d2b1f" opacity="0.2"/>
+  <!-- Pine trees -->
+  <g transform="translate(100, 360) scale(0.7)">
+    <path d="M0 0 L-15 0 L0 -40 L15 0Z" fill="#9b1b30" opacity="0.2"/>
+    <rect x="-3" y="0" width="6" height="12" fill="#5a4030" opacity="0.2"/>
+  </g>
+  <g transform="translate(300, 350) scale(0.8)">
+    <path d="M0 0 L-18 0 L0 -48 L18 0Z" fill="#9b1b30" opacity="0.2"/>
+    <rect x="-3" y="0" width="6" height="14" fill="#5a4030" opacity="0.2"/>
+  </g>
+  <!-- Snow dots -->
+  <circle cx="150" cy="290" r="2" fill="#fff8f0" opacity="0.5"/>
+  <circle cx="250" cy="300" r="1.5" fill="#fff8f0" opacity="0.4"/>
+  <circle cx="320" cy="280" r="2" fill="#fff8f0" opacity="0.45"/>
+  <circle cx="80" cy="310" r="1.5" fill="#fff8f0" opacity="0.4"/>
+  <text x="200" y="470" font-size="24" fill="#9b1b30" font-family="sans-serif" text-anchor="middle" font-weight="600">Swiss Alps</text>
+</svg>

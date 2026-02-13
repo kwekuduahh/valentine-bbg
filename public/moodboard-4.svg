@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <!-- Moodboard: Dinner Date Night  candles, wine glasses, intimate setting -->
+  <defs>
+    <linearGradient id="mb4bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1717"/>
+      <stop offset="100%" stop-color="#3d2b1f"/>
+    </linearGradient>
+    <radialGradient id="candleGlow" cx="0.5" cy="0.45" r="0.45">
+      <stop offset="0%" stop-color="#ffd7cc" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2a1717" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#mb4bg)"/>
+  <ellipse cx="400" cy="450" rx="350" ry="300" fill="url(#candleGlow)"/>
+  <!-- Table -->
+  <ellipse cx="400" cy="550" rx="260" ry="40" fill="#5a4030" opacity="0.3"/>
+  <rect x="200" y="500" width="400" height="10" rx="5" fill="#3d2b1f" opacity="0.5"/>
+  <!-- Table cloth edge -->
+  <path d="M200 505 Q250 520 300 510 Q350 500 400 510 Q450 520 500 510 Q550 500 600 510" stroke="#f7c5cc" stroke-width="1.5" fill="none" opacity="0.2"/>
+  <!-- Candle -->
+  <rect x="388" y="430" width="24" height="60" rx="4" fill="#fff8f0" opacity="0.6"/>
+  <!-- Flame -->
+  <ellipse cx="400" cy="425" rx="8" ry="14" fill="#ffd7cc" opacity="0.8"/>
+  <ellipse cx="400" cy="420" rx="4" ry="8" fill="#fff8f0" opacity="0.9"/>
+  <!-- Candle glow -->
+  <circle cx="400" cy="425" r="40" fill="#ffd7cc" opacity="0.08"/>
+  <circle cx="400" cy="425" r="70" fill="#ffd7cc" opacity="0.04"/>
+  <!-- Wine glass left -->
+  <path d="M290 490 L290 460 Q290 440 310 440 Q330 440 330 460 L330 490" stroke="#f7c5cc" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <line x1="310" y1="490" x2="310" y2="500" stroke="#f7c5cc" stroke-width="1.5" opacity="0.3"/>
+  <line x1="298" y1="500" x2="322" y2="500" stroke="#f7c5cc" stroke-width="1.5" opacity="0.3"/>
+  <!-- Wine in glass -->
+  <path d="M294 470 Q310 480 326 470" fill="#dc143c" opacity="0.3"/>
+  <!-- Wine glass right -->
+  <path d="M470 490 L470 460 Q470 440 490 440 Q510 440 510 460 L510 490" stroke="#f7c5cc" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <line x1="490" y1="490" x2="490" y2="500" stroke="#f7c5cc" stroke-width="1.5" opacity="0.3"/>
+  <line x1="478" y1="500" x2="502" y2="500" stroke="#f7c5cc" stroke-width="1.5" opacity="0.3"/>
+  <path d="M474 470 Q490 480 506 470" fill="#dc143c" opacity="0.3"/>
+  <!-- Plate left -->
+  <ellipse cx="310" cy="490" rx="40" ry="10" fill="none" stroke="#f7c5cc" stroke-width="1" opacity="0.2"/>
+  <!-- Plate right -->
+  <ellipse cx="490" cy="490" rx="40" ry="10" fill="none" stroke="#f7c5cc" stroke-width="1" opacity="0.2"/>
+  <!-- Stars through window or above -->
+  <circle cx="150" cy="120" r="2" fill="#f7c5cc" opacity="0.5"/>
+  <circle cx="300" cy="80" r="1.5" fill="#fff8f0" opacity="0.4"/>
+  <circle cx="500" cy="100" r="2" fill="#f7c5cc" opacity="0.5"/>
+  <circle cx="650" cy="140" r="1.8" fill="#fff8f0" opacity="0.4"/>
+  <circle cx="220" cy="200" r="1.5" fill="#f4a6b1" opacity="0.3"/>
+  <circle cx="580" cy="180" r="2" fill="#f7c5cc" opacity="0.4"/>
+  <!-- Small heart -->
+  <g transform="translate(400, 380) scale(0.35)">
+    <path d="M0 -15 C-20 -40 -48 -15 -28 8 L0 32 L28 8 C48 -15 20 -40 0 -15Z" fill="#dc143c" opacity="0.5"/>
+  </g>
+  <text x="400" y="830" font-size="28" fill="#f7c5cc" font-family="sans-serif" text-anchor="middle" opacity="0.6">Dinner Date Nights</text>
+</svg>
