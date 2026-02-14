@@ -67,11 +67,11 @@ export function RoadmapSection() {
         <div className="mt-8 overflow-hidden rounded-[2rem] border border-none bg-none px-4 pt-10 pb-5 sm:px-7 sm:pt-12 ">
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-xs tracking-[0.25em] text-[#ece7dfb3]">Destinations</p>
-            <p className="font-heading mt-2 text-4xl leading-[0.92] text-[#f4efe6] sm:text-6xl">
+            <h3 className="text-2xl tracking-normal leading-none font-semibold mt-2 text-[#f4efe6]">
               OUR NEXT
               <br />
               LOVE ADVENTURES
-            </p>
+            </h3>
           </div>
 
           <div className="lg:mt-16 mt-10 grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">

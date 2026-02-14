@@ -48,7 +48,7 @@ export function Timeline({ milestones }: TimelineProps) {
               {/* <TimelineTime className="font-heading text-sm uppercase tracking-[0.2em] text-[#fdf9f7]">
                 {item.year}
               </TimelineTime> */}
-              <TimelineTitle className="font-heading text-2xl text-[#fdf9f7] sm:text-3xl">{item.title}</TimelineTitle>
+              <TimelineTitle className="font-heading text-2xl text-[#fdf9f7] sm:text-2xl">{item.title}</TimelineTitle>
             </TimelineHeader>
             <TimelineDescription className="mt-2 text-2xl text-[#fdf9f7] sm:text-3xl">{item.description}</TimelineDescription>
           </TimelineContent>
