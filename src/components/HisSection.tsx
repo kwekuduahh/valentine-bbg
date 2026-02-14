@@ -19,7 +19,7 @@ export function HisSection() {
           <div className="order-2 md:order-1">
             <div className="mb-4 flex items-center gap-3 text-[#fdf9f7]">
               <HeartIcon size={30} />
-              <h3 className=" text-2xl tracking-normal font-semibold leading-none">Why You Are Special</h3>
+              <h3 className=" text-2xl tracking-normal font-semibold font-heading leading-none">Why You Are Special</h3>
             </div>
             <StaggerOnScroll effect="scale">
               <HighlightCards

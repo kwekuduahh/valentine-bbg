@@ -9,7 +9,7 @@ export function StorybookSection() {
   return (
     <section className="px-4 py-18 sm:px-6 sm:py-24">
       <div className="mx-auto max-w-5xl">
-        <h2 className="font-heading text-center text-3xl text-[#fdf9f7] sm:text-5xl">How We Met</h2>
+        <h2 className="font-heading text-center text-3xl text-[#fdf9f7]">How We Met</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-2xl text-[#fdf9f7] sm:text-3xl">
           A tiny storybook of the moments that changed everything.
         </p>
