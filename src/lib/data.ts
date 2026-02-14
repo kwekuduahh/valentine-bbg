@@ -100,5 +100,5 @@ export const profileImages = {
 	him: '/his-profile.jpeg',
 };
 
-export const spotifyPlaceholder =
-	'https://open.spotify.com/embed/playlist/37i9dQZF1DX50QitC6Oqtn?utm_source=generator';
+export const appleMusicPlaylistEmbed =
+	'https://embed.music.apple.com/gh/playlist/project-us/pl.u-WabZ6ojCdKJrE1Z';
