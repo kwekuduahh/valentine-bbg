@@ -15,7 +15,7 @@ export function HeroSection() {
       />
       <FloatingHearts />
       <div className="mt-auto mx-auto w-full max-w-3xl text-center">
-        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Project Us</p>
+        <p className="font-heading text-xs uppercase tracking-[0.35em] text-[#ffc041]">Project : Us</p>
         <h1 className="font-heading mt-4 max-sm:text-xl text-3xl font-extrabold text-[#ffc041] sm:text-6xl">Happy Valentine's Day <span className="text-[#ffc041]">💖</span></h1>
         {/* <BlurText
           text="I love you more than words can say"

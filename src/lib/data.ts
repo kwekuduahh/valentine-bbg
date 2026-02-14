@@ -5,7 +5,7 @@ export type StoryPage = {
 };
 
 export const heroIntro = {
-	heading: 'Project Us',
+	heading: 'Project : Us',
 	subheading:
 		'There’s nothing better than getting lost together watching our favorite shows, or singing during our car rides. We are two different but the same souls that found each other unexpectedly and decided to go on a ride together.',
 };
